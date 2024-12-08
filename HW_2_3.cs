@@ -1,0 +1,26 @@
+﻿﻿using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Введите число n: ");
+        int n = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Цепочка замен для числа n: ");
+        while (n != 1)
+        {
+            Console.WriteLine(n + "");
+            if (n % 2 == 0)
+            {
+                n /= 2;
+            }
+
+            else
+            {
+                n = 3 * n + 1;
+            }
+        }
+        Console.WriteLine(1);
+    }
+}
